@@ -19,7 +19,7 @@ body {
   text-align: center;
   font-weight: 500;
   border-radius: 4px;
-  padding: 18px 38px;
+  padding: 18px 43px;
 }
 
 h1,
@@ -49,7 +49,4 @@ div.greeting {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
-}
-.hero a.btn-booking {
-  padding: 18px 46px;
 }
