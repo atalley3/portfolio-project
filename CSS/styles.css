@@ -1,6 +1,54 @@
-body {
-  font-family: "Poppins", sans-serif;
+:root {
+  --branding-color: #6c63ff;
+  --text-color: #272142;
+  --fill-color: #f9f7fe;
+  --heading-font: "Playfair Display", serif;
+  --content-font: "Poppins", sans-serif;
 }
-h1 {
-  font-family: "Playfair Display", serif;
+
+body {
+  font-family: var(--content-font);
+  font-weight: 400;
+}
+
+.btn-booking {
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  background-color: var(--branding-color);
+  text-align: center;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+header.hero {
+  background-color: var(--fill-color);
+  text-align: center;
+  color: var(--text-color);
+  padding: 270px 0;
+}
+div.greeting {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+}
+.hero h1 {
+  font-size: 96px;
+  line-height: 1.33;
+  color: black;
+}
+.hero h2 {
+  font-family: var(--content-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.hero a.btn-booking {
+  padding: 18px 46px;
 }
