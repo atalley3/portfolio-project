@@ -159,7 +159,7 @@ p.about-paragraph {
   }
 }
 nav {
-  padding: 10px;
+  padding: 20px;
   background-color: var(--fill-color);
 }
 nav li {
@@ -191,6 +191,7 @@ nav a.active {
 .nav-img {
   max-width: 100%;
   height: auto;
+  padding-left: 10px;
 }
 @media (max-width: 574px) {
   header.hero {
@@ -218,13 +219,20 @@ nav a.active {
   .large-pic {
     padding: 0;
   }
+  nav {
+    padding: 3px;
+  }
   nav li {
-    font-size: 14px;
+    font-size: 12px;
   }
   nav a.active {
-    font-size: 16px;
+    font-size: 13px;
+  }
+  nav span.name {
+    padding: 0;
   }
   .nav-img {
-    max-width: 80%;
+    max-width: 60%;
+    padding-left: 5px;
   }
 }
