@@ -38,6 +38,7 @@ p {
 }
 a {
   color: var(--branding-color);
+  transition: all 150ms ease-in-out;
 }
 a:hover {
   color: var(--branding-color-hover);
@@ -51,6 +52,7 @@ a.btn-booking {
   font-weight: 500;
   border-radius: 4px;
   padding: 18px 43px;
+  transition: all 150ms ease-in-out;
 }
 a.btn-booking:hover {
   font-size: 18;
@@ -72,6 +74,7 @@ a.btn-booking:hover {
   text-align: center;
   font-weight: 500;
   padding: 18px 43px;
+  transition: all 150ms ease-in-out;
 }
 a.btn-alt:hover {
   font-size: 18px;
@@ -108,7 +111,7 @@ div.greeting {
 }
 .booking-banner {
   background-color: var(--fill-color);
-  margin-bottom: 40px;
+  margin: 40px;
   padding: 30px;
 }
 .booking-banner h2 {
@@ -155,6 +158,40 @@ p.about-paragraph {
     padding: 10px;
   }
 }
+nav {
+  padding: 10px;
+  background-color: var(--fill-color);
+}
+nav li {
+  display: inline;
+  list-style: none;
+  padding: 10px;
+  font-size: 18px;
+}
+nav span.name {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+nav a {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 150ms ease-in-out;
+}
+nav a:hover {
+  color: var(--branding-color-hover);
+}
+nav a.active {
+  font-weight: 500;
+  color: var(--branding-color);
+  text-decoration: underline;
+  font-size: 20px;
+}
+.nav-img {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 574px) {
   header.hero {
     padding: 100px 0;
@@ -180,5 +217,14 @@ p.about-paragraph {
   }
   .large-pic {
     padding: 0;
+  }
+  nav li {
+    font-size: 14px;
+  }
+  nav a.active {
+    font-size: 16px;
+  }
+  .nav-img {
+    max-width: 80%;
   }
 }
