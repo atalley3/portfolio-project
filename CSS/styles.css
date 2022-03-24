@@ -98,6 +98,31 @@ div.greeting {
   font-size: 36px;
   line-height: 1.5;
 }
+footer a.email-link {
+  font-size: 30px;
+  line-height: 1.5;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+footer a.email-link:hover {
+  color: var(--branding-color);
+}
+footer a.social-icons {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--branding-color);
+  background-color: var(--fill-color);
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+  margin: 5px;
+  padding: 10px 20px;
+}
+footer a.social-icons:hover {
+  color: white;
+  background: var(--branding-color);
+}
 .hero h1 {
   font-size: 96px;
   line-height: 1.33;
@@ -234,5 +259,12 @@ nav a.active {
   .nav-img {
     max-width: 60%;
     padding-left: 5px;
+  }
+  footer a.email-link {
+    font-size: 22px;
+  }
+  footer a.social-icons {
+    font-size: 18px;
+    padding: 10px 14px;
   }
 }
