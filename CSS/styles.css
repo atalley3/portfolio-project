@@ -12,7 +12,44 @@ body {
   font-weight: 400;
   color: var(--text-color);
 }
+/* navigation CSS */
+nav {
+  padding: 20px;
+  background-color: var(--fill-color);
+}
+nav li {
+  display: inline;
+  list-style: none;
+  padding: 10px;
+  font-size: 18px;
+}
+nav span.name {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+nav a {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 150ms ease-in-out;
+}
+nav a:hover {
+  color: var(--branding-color-hover);
+}
+nav a.active {
+  font-weight: 500;
+  color: var(--branding-color);
+  text-decoration: underline;
+  font-size: 20px;
+}
+.nav-img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
 
+/* universal tags*/
 h1,
 h2,
 h3,
@@ -43,6 +80,8 @@ a {
 a:hover {
   color: var(--branding-color-hover);
 }
+
+/*Special buttons*/
 a.btn-booking {
   font-size: 18px;
   line-height: 1.5;
@@ -87,6 +126,7 @@ a.btn-alt:hover {
   padding: 18px 43px;
 }
 
+/* hero */
 header.hero {
   background-color: var(--fill-color);
   text-align: center;
@@ -98,6 +138,19 @@ div.greeting {
   font-size: 36px;
   line-height: 1.5;
 }
+.hero h1 {
+  font-size: 96px;
+  line-height: 1.33;
+  color: black;
+}
+.hero h2 {
+  font-family: var(--content-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/*footer*/
 footer a.email-link {
   font-size: 30px;
   line-height: 1.5;
@@ -123,17 +176,8 @@ footer a.social-icons:hover {
   color: white;
   background: var(--branding-color);
 }
-.hero h1 {
-  font-size: 96px;
-  line-height: 1.33;
-  color: black;
-}
-.hero h2 {
-  font-family: var(--content-font);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
-}
+
+/*booking section*/
 .booking-banner {
   background-color: var(--fill-color);
   margin: 40px;
@@ -143,6 +187,8 @@ footer a.social-icons:hover {
   font-size: 36px;
   text-align: end;
 }
+
+/*about page specific*/
 .about-content {
   padding: 100px 100px 50px 100px;
 }
@@ -156,6 +202,8 @@ p.about-paragraph {
 .about-title-line p {
   font-size: 18px;
 }
+
+/*utility classes*/
 .large-pic {
   padding: 60px;
 }
@@ -165,6 +213,8 @@ p.about-paragraph {
 .small-text {
   font-size: 14px;
 }
+
+/* media query for tablets and smaller*/
 @media (max-width: 992px) {
   h1,
   .hero h1 {
@@ -179,45 +229,15 @@ p.about-paragraph {
   header.hero {
     padding: 160px 0;
   }
+  footer a.email-link {
+    font-size: 26px;
+  }
   .large-pic {
     padding: 10px;
   }
 }
-nav {
-  padding: 20px;
-  background-color: var(--fill-color);
-}
-nav li {
-  display: inline;
-  list-style: none;
-  padding: 10px;
-  font-size: 18px;
-}
-nav span.name {
-  font-size: 24px;
-  font-weight: 500;
-  padding-left: 15px;
-}
-nav a {
-  font-weight: 400;
-  text-decoration: none;
-  color: var(--text-color);
-  transition: all 150ms ease-in-out;
-}
-nav a:hover {
-  color: var(--branding-color-hover);
-}
-nav a.active {
-  font-weight: 500;
-  color: var(--branding-color);
-  text-decoration: underline;
-  font-size: 20px;
-}
-.nav-img {
-  max-width: 100%;
-  height: auto;
-  padding-left: 10px;
-}
+
+/* media query for phones*/
 @media (max-width: 574px) {
   header.hero {
     padding: 100px 0;
